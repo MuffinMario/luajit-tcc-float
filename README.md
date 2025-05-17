@@ -1,5 +1,6 @@
 # luajit-tcc-float
-Luajit implementation of C float (32-bit) using TCC ffi.
+Luajit implementation of C float (32-bit). Ensuring no downcast (float -> number(lua double)) during operations with the use of JIT C compiled functions through the use of TCC with lua bindings from https://github.com/Playermet
+Very helpful if you need to accurately represent floating point operations, where the accuracy changes from 32 to 64 bit may deliver different results.
 
 # Requirements
 
